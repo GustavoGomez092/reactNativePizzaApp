@@ -1,0 +1,29 @@
+{
+    "pizzas": [
+      {
+        "name": "Pepperoni",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": "../assets/pizzas/jamon-peppe.png"
+      },
+      {
+        "name": "Pollo",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": "../assets/pizzas/pollo.png"
+      },
+      {
+        "name": "Carne",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": "../assets/pizzas/carne.png"
+      },
+      {
+        "name": "Chorizo",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": "../assets/pizzas/chorizo.png"
+      },
+      {
+        "name": "hawaiiana",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": "../assets/pizzas/hawaiiana.png"
+      }
+    ]
+  }
