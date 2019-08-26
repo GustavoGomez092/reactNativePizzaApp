@@ -12,8 +12,9 @@ export default class App extends Component {
 
   async componentDidMount () {
     await Font.loadAsync({
-      'poppins-SemiBold': require('./assets/fonts/Poppins-SemiBold.ttf'),
-      'poppins-extraLight': require('./assets/fonts/Poppins-ExtraLight.ttf')
+      bangers: require('./assets/fonts/bangers.ttf'),
+      'Antonio-Regular': require('./assets/fonts/Antonio-Regular.ttf'),
+      'Antonio-Light': require('./assets/fonts/Antonio-Light.ttf')
     })
 
     this.setState({ fontLoaded: true })

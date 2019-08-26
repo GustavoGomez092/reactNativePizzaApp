@@ -24,7 +24,7 @@ export class ModalCont extends Component {
           <Ionicons
             name='ios-close-circle'
             size={56}
-            color='#E8252B'
+            color='#e8252b'
             style={{ top: -6, left: 9.9, width: 65, height: 65 }}
           />
         </CloseContainer>

@@ -123,12 +123,11 @@ export class PizzaPicker extends Component {
         >
           <BlurPieContainer>
             <Pie
-              source={require('../assets/pizzas/jamon-peppe.png')}
-              blurRadius={1}
+              source={require('../assets/isotipo.png')}
+              blurRadius={2}
             />
           </BlurPieContainer>
         </AnimatedBlurView>
-        {}
         <AnimatedScrollContainerPizza style={containerPizzaAnim}>
           <AnimatedScrollPizza style={pieScroll}>
             <AnimatedMovePizza>
@@ -169,10 +168,10 @@ export class PizzaPicker extends Component {
           >
             <TextContainer>
               <>
-                <HeaderText style={{ fontFamily: 'poppins-SemiBold' }}>
+                <HeaderText style={{ fontFamily: 'bangers' }}>
                   Pepperoni
                 </HeaderText>
-                <ContentText style={{ fontFamily: 'poppins-extraLight' }}>
+                <ContentText style={{ fontFamily: 'Antonio-Light' }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </ContentText>
@@ -180,10 +179,10 @@ export class PizzaPicker extends Component {
             </TextContainer>
             <TextContainer>
               <>
-                <HeaderText style={{ fontFamily: 'poppins-SemiBold' }}>
+                <HeaderText style={{ fontFamily: 'bangers' }}>
                   Pollo
                 </HeaderText>
-                <ContentText style={{ fontFamily: 'poppins-extraLight' }}>
+                <ContentText style={{ fontFamily: 'Antonio-Light' }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </ContentText>
@@ -191,13 +190,10 @@ export class PizzaPicker extends Component {
             </TextContainer>
             <TextContainer>
               <>
-                <HeaderText style={
-                  { fontFamily: 'poppins-SemiBold' }
-                }
-                >
+                <HeaderText style={{ fontFamily: 'bangers' }}>
                   Carne
                 </HeaderText>
-                <ContentText style={{ fontFamily: 'poppins-extraLight' }}>
+                <ContentText style={{ fontFamily: 'Antonio-Light' }}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </ContentText>
@@ -207,7 +203,7 @@ export class PizzaPicker extends Component {
         </ScrollContainerText>
         <ButtonContainer>
           <Button onPress={() => this.startModalAnimation()}>
-            <WhiteText>Seleccionar</WhiteText>
+            <WhiteText style={{ fontFamily: 'bangers' }}>Seleccionar</WhiteText>
           </Button>
         </ButtonContainer>
         <AnimatedModal style={modalAnimation}>
@@ -222,6 +218,7 @@ const Container = styled.View`
   flex: 1;
   align-items: center;
   flex-direction: column;
+  background-color: #D7CF07;
 `
 const TextContainer = styled.View`
   width: ${width};
@@ -262,34 +259,39 @@ const AnimatedScrollContainerPizza = Animated.createAnimatedComponent(
 )
 
 const WhiteText = styled.Text`
-  font-size: 18px;
+  font-size: 22px;
   color: white;
   margin: auto;
+  width: 100%;
+  text-align: center;
 `
 
 const ButtonContainer = styled.View`
-  top: -100px;
+  top: -130px;
   elevation: 4;
 `
 
 const HeaderText = styled.Text`
-  font-size: 22px;
-  color: #ec4d09;
-  margin-bottom: 30px;
+  font-size: 28px;
+  color: #010101;
+  margin-bottom: 10px;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
 `
 
 const ContentText = styled.Text`
-  font-size: 14px;
+  font-size: 16px;
   width: ${width - width * 0.2}px;
-  color: #ec4d09;
-  margin-bottom: 15px;
+  color: #010101;
+  margin-bottom: 5px;
 `
 
 const Button = styled.TouchableOpacity`
   text-align: center;
   width: ${width - width * 0.2}px;
   height: 50px;
-  background-color: #e8252b;
+  background-color: #E71D36;
   border-radius: 5px;
   elevation: 11;
   box-shadow: -10px 10px 8px rgba(0, 0, 0, 0.25);
@@ -321,12 +323,13 @@ const MiniPie = styled.Image`
 `
 
 const BlurPieContainer = styled.View`
-  width: ${width - width * 0.05};
-  height: ${width - width * 0.05};
+  width: ${width};
+  height: ${width};
   top: -50px;
   opacity: 0.3;
   box-shadow: -10px 10px 8px rgba(0, 0, 0, 0.25);
   border-radius: ${width - width * 0.05};
+  align-items: center;
 `
 
 // modal container styles
